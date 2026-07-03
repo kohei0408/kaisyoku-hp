@@ -56,9 +56,11 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-family: 'Noto Serif JP', serif;
-  font-size: clamp(2.5rem, 5.6vw, 4.5rem);
-  letter-spacing: -0.03em;
+  font-family: 'Noto Sans JP', system-ui, -apple-system, sans-serif;
+  font-size: clamp(2.15rem, 4.6vw, 3.8rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.16;
 }
 
 h1 span { color: var(--text); }
@@ -190,6 +192,21 @@ p { margin: 0; color: var(--muted); }
   padding: 0;
   display: grid;
   gap: 12px;
+}
+
+.hero-illustration {
+  margin-top: 34px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(242,247,255,0.96));
+  box-shadow: var(--shadow);
+}
+
+.hero-illustration img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
 .hero-points li {
@@ -611,6 +628,7 @@ p { margin: 0; color: var(--muted); }
   .support-card,
   .price-card,
   .comparison-card { padding: 22px; }
+  .hero-illustration { padding: 12px; }
 
   .comparison-steps li {
     grid-template-columns: 32px minmax(0, 1fr);
